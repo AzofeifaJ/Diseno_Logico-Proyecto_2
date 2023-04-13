@@ -9,7 +9,7 @@
 1. Azofeifa Jiménez Alonso
 2. Luna Herrera José David
 3. Vargas Arce Andrés
-4. Víquez Sánchez Manfred
+
 
 ### I Semestre 2023
 

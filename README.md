@@ -16,6 +16,16 @@
 ## Descripción general
 
 El objetivo fundamental de este proyecto es desarrollar de un sistema en FPGA para explorar el uso de periféricos de la Nexys4/Basys3 como el display de siete segmentos y los switches. Es mandatorio leer los respectivos apartados del manual de la tarjeta de desarrollo. Para que el usuario por medio de teclas ingrese un numero en binario y este el FPGA realice una transformación de base 
+
+### Diagrama de bloques general del sistema
+
+![Image](https://user-images.githubusercontent.com/111375712/231040286-a2a716a7-fee8-4359-a3a4-1a605ab350e3.png)
+
+
+### Representación de una Nexys 4 DDR
+
+![nexys-4-ddr-2](https://user-images.githubusercontent.com/111375712/233267532-c767c9a8-8a26-439e-a7d4-a855c1f0dba8.png)
+
  
 
 ###  Subsistema de lectura y sincronización.

@@ -15,7 +15,8 @@
 
 ## Descripción general
 
- Desarrollo de un sistema en FPGA para explorar el uso de periféricos de la Nexys4/Basys3 como el display de siete segmentos y los switches. Es mandatorio leer los respectivos apartados del manual de la tarjeta de desarrollo. Para que el usuario por medio de teclas ingrese un numero en binario y este el FPGA realice una transformación de base 
+El objetivo fundamental de este proyecto es desarrollar de un sistema en FPGA para explorar el uso de periféricos de la Nexys4/Basys3 como el display de siete segmentos y los switches. Es mandatorio leer los respectivos apartados del manual de la tarjeta de desarrollo. Para que el usuario por medio de teclas ingrese un numero en binario y este el FPGA realice una transformación de base 
+ 
 
 ###  Subsistema de lectura y sincronización.
 La función es leer los valores de los 16 conmutadores que se encuentran en la placa de la FPGA y sincronizarlos con el reloj interno de la misma. De esta forma, se puede controlar el modo de operación del sistema y la entrada binaria que se desea procesar.
@@ -47,6 +48,7 @@ La función es mostrar la información codificada en formato hexadecimal que pro
 
 
 ### Diagramas de estado de las FSM diseñadas
+Los diagramas de estado de las máquinas de estados finitos (FSM) son una forma de representar gráficamente el comportamiento de un sistema que puede estar en uno de varios estados posibles. Las transiciones entre estados se representan por flechas con una etiqueta que indica la condición o evento que provoca el cambio de estado. Los diagramas de estado de las FSM permiten visualizar fácilmente el flujo de control y las acciones que se realizan en cada estado del sistema.
 
 
 

@@ -29,9 +29,20 @@ El objetivo fundamental de este proyecto es desarrollar de un sistema en FPGA pa
  El algoritmo de double dabble es un método para convertir números binarios en notación decimal codificada en binario (BCD). También se conoce como el algoritmo de desplazamiento y suma 3, y se puede implementar usando un pequeño número de puertas lógicas en el hardware de la computadora, pero a costa de una alta latencia.
 
 
-###Funcionamiento del Algoritmo Double Dabble
+### Funcionamiento del Algoritmo Double Dabble
+El algoritmo de double dabble es un método para convertir números binarios en notación decimal codificada en binario (BCD). El algoritmo consiste en desplazar los bits binarios hacia la izquierda uno por uno y suma tres a cada dígito BCD que sea mayor o igual a cinco. De esta forma, se logra que el valor BCD se duplique en cada iteración y se añada el bit correspondiente del número binario. La suma de tres asegura que el valor se lleve correctamente en base 10. El algoritmo se puede implementar con un pequeño número de puertas lógicas en hardware, pero con el costo de una alta latencia.  
 
-El algoritmo funciona de la siguiente manera: se supone que el número original que se va a convertir se almacena en un registro que tiene n bits de ancho. Se reserva un espacio auxiliar lo suficientemente grande como para contener tanto el número original como su representación BCD; n + 4×ceil(n/3) bits serán suficientes. Se necesita un máximo de 4 bits en binario para almacenar cada dígito decimal. Luego se particiona el espacio auxiliar en dígitos BCD (a la izquierda) y el registro original (a la derecha). El espacio auxiliar se inicializa a ceros, y luego se copia el valor a convertir en el espacio del "registro original" a la derecha. El algoritmo luego itera n veces. En cada iteración, cualquier dígito BCD que sea al menos 5 (0101 en binario) se incrementa en 3 (0011); luego todo el espacio auxiliar se desplaza un bit a la izquierda. El incremento asegura que un valor de 5, incrementado y desplazado a la izquierda, se convierta en 16 (10000), lo que lleva correctamente al siguiente dígito BCD. Esencialmente, el algoritmo opera duplicando el valor BCD de la izquierda en cada iteración y sumando uno o cero según el patrón de bits original. El desplazamiento a la izquierda realiza ambas tareas simultáneamente. Si algún dígito es cinco o más, se le suma tres para asegurar que el valor "lleve" en base 10.
+#### Funcionamiento del Algoritmo Double Dabble
+El algoritmo funciona de la siguiente manera: 
+1- Se supone que el número original que se va a convertir se almacena en un registro que tiene n bits de ancho. Se reserva un espacio auxiliar lo suficientemente grande como para contener tanto el número original como su representación BCD. Se necesita un máximo de 4 bits en binario para almacenar cada dígito decimal. 
+2- Luego se particiona el espacio auxiliar en dígitos BCD (a la izquierda) y el registro original (a la derecha). El espacio auxiliar se inicializa a ceros, y luego se copia el valor a convertir en el espacio del "registro original" a la derecha. 
+3- El algoritmo luego itera n veces. En cada iteración, cualquier dígito BCD que sea al menos 5 (0101 en binario) se incrementa en 3 (0011); luego todo el espacio auxiliar se desplaza un bit a la izquierda. 
+4- El incremento asegura que un valor de 5, incrementado y desplazado a la izquierda, se convierta en 16 (10000), lo que lleva correctamente al siguiente dígito BCD. 
+5- Esencialmente, el algoritmo opera duplicando el valor BCD de la izquierda en cada iteración y sumando uno o cero según el patrón de bits original. El desplazamiento a la izquierda realiza ambas tareas simultáneamente. Si algún dígito es cinco o más, se le suma tres para asegurar que el valor "lleve" en base 10.
+
+#### Ejemplo del Algoritmo Double Dabbleejemplo con 18 bits.
+![image](https://user-images.githubusercontent.com/111375712/235828745-cca1f9b6-9f80-4930-965e-912d6076eed7.png)
+
 
 ###  Subsistema de lectura y sincronización.
 La función es leer los valores de los 16 conmutadores que se encuentran en la placa de la FPGA y sincronizarlos con el reloj interno de la misma. De esta forma, se puede controlar el modo de operación del sistema y la entrada binaria que se desea procesar.

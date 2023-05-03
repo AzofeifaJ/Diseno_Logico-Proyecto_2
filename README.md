@@ -89,3 +89,11 @@ Los diagramas de estado de las máquinas de estados finitos (FSM) son una forma 
 
 
 ### Análisis de principales problemas hallados durante el trabajo y de las soluciones aplicadas.
+• Instalaciín del programa Vivado:
+En primer lugar un problema qeu se generó al inicio del proyecto corresponió a la instalación de Vivado 2018.3 debido a la validación de la cuenta, ya que no dejaba instalarlo desde los correos institucioneales, sin embargo pudo ser resuelto al utilizar el correo personal.
+
+• Programación en el programa Vivado:
+Otra dificultad que se generó correspondió a la correcta utilización del programa Vivado, la principal dificultad estuvo en la utilizacion de Visual Studio para ejecutar el código de Vivado.
+
+• Banco de pruebas y testbenches requeridos:
+Otra inconveniente que se presentó fue durante las Simulaciones RTL, ya que no se generaban las simulaciones del testbench y aparecía en términos de impedancias, este error generó atrasos en las pruebas, sin embargo se debía definir el testbench como top en la aplicación del vivado.

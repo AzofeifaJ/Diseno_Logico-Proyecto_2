@@ -79,7 +79,7 @@ Los diagramas de estado de las máquinas de estados finitos (FSM) son una forma 
 
 
 ### Ejemplo y análisis de una simulación funcional
-
+Obtenención de la simulacion a nivel RTL a partir de la simulación del Testbench con un ejemplo implementado los subsistemas.
 
 
 ### Análisis de consumo de recursos en la FPGA (LUTs, FFs, etc.) y del consumo de potencia que reporta la herramienta Vivado.

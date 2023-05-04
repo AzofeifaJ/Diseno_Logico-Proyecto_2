@@ -17,7 +17,7 @@
 
 El objetivo fundamental de este proyecto es desarrollar de un sistema en FPGA para explorar el uso de periféricos de la Nexys4/Basys3 como el display de siete segmentos y los switches. Es mandatorio leer los respectivos apartados del manual de la tarjeta de desarrollo. Para que el usuario por medio de teclas ingrese un numero en binario y este el FPGA realice una transformación de base 
 
-### Diagrama de bloques general del sistema
+### Diagrama de bloques general del sistema suministrado por el profesor
 
 ![Image](https://user-images.githubusercontent.com/111375712/231040286-a2a716a7-fee8-4359-a3a4-1a605ab350e3.png)
 
@@ -48,6 +48,7 @@ Los 14 conmutadores restantes, del 13 al 0, representan la entrada binaria que s
 
 ####  Diagrama de bloques
 
+![image](https://user-images.githubusercontent.com/111375712/236116173-fd49037f-f15e-43b5-9f37-8bf741c5ee3e.png)
 
 
 
@@ -60,11 +61,16 @@ El subsistema de cálculo de código BCD es un componente esencial para el funci
 
 ####  Diagrama de bloques
 
+![image](https://user-images.githubusercontent.com/111375712/236116624-66f617c1-c7f3-4f5f-8ddd-a707cb03274c.png)
 
 
 
 ###  Subsistema de decodificado en display de 7 segmentos. 
 La función es mostrar la información codificada en formato hexadecimal que proviene del subsistema anterior. Para ello, este subsistema toma los datos para los 4 dígitos de un bloque de 7 segmentos. Además cuenta con un temporizador que controla la frecuencia de actualización de los 4 dígitos, de forma que se evite el parpadeo y se facilite la lectura por parte del usuario. El subsistema se comunica con el resto del sistema mediante un bus de datos de 8 bits y un bus de control de 4 bits.
+
+####  Diagrama de bloques
+
+![image](https://user-images.githubusercontent.com/111375712/236115926-6a558b75-e8e1-4ec2-8bd5-a5ba27bc673d.png)
 
 #### Imagen correspondiente al encendido de LEDs en NEXYS 4 ddr
 
@@ -78,7 +84,6 @@ La función es mostrar la información codificada en formato hexadecimal que pro
 ![image](https://user-images.githubusercontent.com/111375712/194989472-a5276744-b65a-47e5-b6a7-da2e06bcdfcc.png)
 
 
-####  Diagrama de bloques
 
 
 

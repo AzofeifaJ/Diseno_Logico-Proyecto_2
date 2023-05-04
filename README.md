@@ -26,8 +26,6 @@ El objetivo fundamental de este proyecto es desarrollar de un sistema en FPGA pa
 
 ![nexys-4-ddr-2](https://user-images.githubusercontent.com/111375712/233267532-c767c9a8-8a26-439e-a7d4-a855c1f0dba8.png)
 
- El algoritmo de double dabble es un método para convertir números binarios en notación decimal codificada en binario (BCD). También se conoce como el algoritmo de desplazamiento y suma 3, y se puede implementar usando un pequeño número de puertas lógicas en el hardware de la computadora, pero a costa de una alta latencia.
-
 
 ### Funcionamiento del Algoritmo Double Dabble
 El algoritmo de double dabble es un método para convertir números binarios en notación decimal codificada en binario (BCD). El algoritmo consiste en desplazar los bits binarios hacia la izquierda uno por uno y suma tres a cada dígito BCD que sea mayor o igual a cinco. De esta forma, se logra que el valor BCD se duplique en cada iteración y se añada el bit correspondiente del número binario. La suma de tres asegura que el valor se lleve correctamente en base 10. El algoritmo se puede implementar con un pequeño número de puertas lógicas en hardware, pero con el costo de una alta latencia.  

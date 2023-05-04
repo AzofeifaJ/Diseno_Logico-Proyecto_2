@@ -103,6 +103,8 @@ Obtenención de la simulacion a nivel RTL a partir de la simulación del Testben
 
 ![d8dd4e61-b171-4b64-af50-fbb99ff8ab07](https://user-images.githubusercontent.com/111375712/236150219-2fbf3515-fb83-43aa-a405-4dc4cb7da84c.jpg)
 
+A partir de la imagen anterior se puede explicar que corresponde al el Waveform obtenido por Vivado sobre el ejemplo del resultado que se genera a partir del subsistema de transformacón a BCD.
+
 
 ### Análisis de principales problemas hallados durante el trabajo y de las soluciones aplicadas.
 • Instalación del programa Vivado:

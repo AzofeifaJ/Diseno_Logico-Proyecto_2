@@ -102,7 +102,8 @@ module controladorEntradas(
     end
     
     else if (modo==11)begin 
-        binA=13'b0000001111111;
+        binA=13'b0000000000000;
+        binB=13'b0000000000000;
     end
     
     else begin 

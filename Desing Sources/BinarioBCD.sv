@@ -6,7 +6,7 @@
 // Design Name: Convertidor de Binario a BCD
 // Module Name: ConvertidorBCD
 // Project Name: Proyecto 2 de Diseño Lógico
-// Description: Combierte una entrada de un número bianrio de máximo 14 bit para transformarlo en un código BCD de 16 bits
+// Description: Convierte una entrada de un número bianrio de máximo 14 bit para transformarlo en un código BCD de 16 bits
 // 
 //////////////////////////////////////////////////////////////////////////////////
 

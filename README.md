@@ -40,9 +40,6 @@ El algoritmo funciona de la siguiente manera:
 4- El incremento asegura que un valor de 5, incrementado y desplazado a la izquierda, se convierta en 16 (10000), lo que lleva correctamente al siguiente dígito BCD. 
 5- Esencialmente, el algoritmo opera duplicando el valor BCD de la izquierda en cada iteración y sumando uno o cero según el patrón de bits original. El desplazamiento a la izquierda realiza ambas tareas simultáneamente. Si algún dígito es cinco o más, se le suma tres para asegurar que el valor "lleve" en base 10.
 
-#### Ejemplo del Algoritmo Double Dabbleejemplo con 18 bits.
-![image](https://user-images.githubusercontent.com/111375712/235828745-cca1f9b6-9f80-4930-965e-912d6076eed7.png)
-
 
 ###  Subsistema de lectura y sincronización.
 La función es leer los valores de los 16 conmutadores que se encuentran en la placa de la FPGA y sincronizarlos con el reloj interno de la misma. De esta forma, se puede controlar el modo de operación del sistema y la entrada binaria que se desea procesar.
@@ -100,7 +97,7 @@ Obtenención de la simulacion a nivel RTL a partir de la simulación del Testben
 
 
 ### Análisis de principales problemas hallados durante el trabajo y de las soluciones aplicadas.
-• Instalaciín del programa Vivado:
+• Instalación del programa Vivado:
 En primer lugar un problema qeu se generó al inicio del proyecto corresponió a la instalación de Vivado 2018.3 debido a la validación de la cuenta, ya que no dejaba instalarlo desde los correos institucioneales, sin embargo pudo ser resuelto al utilizar el correo personal.
 
 • Programación en el programa Vivado:

@@ -113,7 +113,7 @@ Obtenención de la simulacion a nivel RTL a partir de la simulación del Testben
 En primer lugar un problema qeu se generó al inicio del proyecto corresponió a la instalación de Vivado 2018.3 debido a la validación de la cuenta, ya que no dejaba instalarlo desde los correos institucioneales, sin embargo pudo ser resuelto al utilizar el correo personal.
 
 • Programación en el programa Vivado:
-Otra dificultad que se generó correspondió a la correcta utilización del programa Vivado, relacionado con aprender el funcionamiento de Vivado, la principal dificultad estuvo en la utilizacion de Visual Studio para ejecutar el código de Vivado.
+Otra dificultad que se generó correspondió a la correcta utilización del programa Vivado, relacionado con aprender el funcionamiento de Vivado, la principal dificultad estuvo en la utilizacion de Visual Studio para ejecutar el código de Vivado, sin embargo se programó directamente en el programa Vivado.
 
 • Banco de pruebas y testbenches requeridos:
-Otra inconveniente que se presentó fue durante las Simulaciones RTL, ya que no se generaban correctamente las simulaciones del testbench y se generaron dificultad en el acoplamiento de los módulos de cada subsistema, este error generó atrasos en la realización de las pruebas necesarias.
+Otra inconveniente que se presentó fue durante las Simulaciones RTL, ya que no se generaban correctamente las simulaciones del testbench y se generaron dificultad en el acoplamiento de los módulos de cada subsistema, este error generó atrasos en la realización de las pruebas necesarias, sin embargo pudo ser resuelto y se obtuvieron los testbench de cada subsistema correctamente.

@@ -69,6 +69,10 @@ El subsistema de cálculo de código BCD es un componente esencial para el funci
 ###  Subsistema de decodificado en display de 7 segmentos. 
 La función es mostrar la información codificada en formato hexadecimal que proviene del subsistema anterior. Para ello, este subsistema toma los datos para los 4 dígitos de un bloque de 7 segmentos. Además cuenta con un temporizador que controla la frecuencia de actualización de los 4 dígitos, de forma que se evite el parpadeo y se facilite la lectura por parte del usuario. El subsistema se comunica con el resto del sistema mediante un bus de datos de 8 bits y un bus de control de 4 bits.
 
+#### Imagen correspondiente al encendido de LEDs en NEXYS 4 ddr
+
+![image](https://user-images.githubusercontent.com/111375712/194989319-14fcad98-e482-48d3-ba70-ff9cf3102c89.png)
+
 ####  Diagrama de bloques
 
 
@@ -92,7 +96,7 @@ Obtenención de la simulacion a nivel RTL a partir de la simulación del Testben
 En primer lugar un problema qeu se generó al inicio del proyecto corresponió a la instalación de Vivado 2018.3 debido a la validación de la cuenta, ya que no dejaba instalarlo desde los correos institucioneales, sin embargo pudo ser resuelto al utilizar el correo personal.
 
 • Programación en el programa Vivado:
-Otra dificultad que se generó correspondió a la correcta utilización del programa Vivado, la principal dificultad estuvo en la utilizacion de Visual Studio para ejecutar el código de Vivado.
+Otra dificultad que se generó correspondió a la correcta utilización del programa Vivado, relacionado con aprender el funcionamiento de Vivado, la principal dificultad estuvo en la utilizacion de Visual Studio para ejecutar el código de Vivado.
 
 • Banco de pruebas y testbenches requeridos:
 Otra inconveniente que se presentó fue durante las Simulaciones RTL, ya que no se generaban las simulaciones del testbench y aparecía en términos de impedancias, este error generó atrasos en las pruebas, sin embargo se debía definir el testbench como top en la aplicación del vivado.

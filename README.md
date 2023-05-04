@@ -101,11 +101,7 @@ Los diagramas de estado de las máquinas de estados finitos (FSM) son una forma 
 ### Ejemplo y análisis de una simulación funcional
 Obtenención de la simulacion a nivel RTL a partir de la simulación del Testbench con un ejemplo implementado los subsistemas.
 
-
-### Análisis de consumo de recursos en la FPGA (LUTs, FFs, etc.) y del consumo de potencia que reporta la herramienta Vivado.
-
-
-### Reporte de velocidades máximas de reloj posibles en el diseño (mínima frecuencia de reloj para este diseño: 50 MHz).
+![d8dd4e61-b171-4b64-af50-fbb99ff8ab07](https://user-images.githubusercontent.com/111375712/236150219-2fbf3515-fb83-43aa-a405-4dc4cb7da84c.jpg)
 
 
 ### Análisis de principales problemas hallados durante el trabajo y de las soluciones aplicadas.
@@ -116,4 +112,4 @@ En primer lugar un problema qeu se generó al inicio del proyecto corresponió a
 Otra dificultad que se generó correspondió a la correcta utilización del programa Vivado, relacionado con aprender el funcionamiento de Vivado, la principal dificultad estuvo en la utilizacion de Visual Studio para ejecutar el código de Vivado, sin embargo se programó directamente en el programa Vivado.
 
 • Banco de pruebas y testbenches requeridos:
-Otra inconveniente que se presentó fue durante las Simulaciones RTL, ya que no se generaban correctamente las simulaciones del testbench y se generaron dificultad en el acoplamiento de los módulos de cada subsistema, este error generó atrasos en la realización de las pruebas necesarias, sin embargo pudo ser resuelto y se obtuvieron los testbench de cada subsistema correctamente.
+Otra inconveniente que se presentó fue durante las Simulaciones RTL, ya que no se generaban correctamente las simulaciones del testbench y se generaron dificultad en el acoplamiento de los módulos de cada subsistema, este error generó atrasos en la realización de las pruebas necesarias.
